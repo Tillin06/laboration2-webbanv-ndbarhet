@@ -1,0 +1,182 @@
+body {
+    background-color: rgb(221, 237, 243);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+header h1{
+    margin: 0;
+    position: relative;
+    padding: 2%;
+}
+header {
+    background-color: rgb(68, 49, 240);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 2%;
+    gap: 10%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+nav a {
+    transition: color 0.3s;
+}
+nav a:hover {
+    color:rgb(0, 0, 0);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero img {
+    width: 100%;
+}
+.hero h2 {
+    font-size: 1.4rem;
+}
+.hero p {
+    max-width: 100%;
+    margin: 2%;
+    line-height: 1.5;
+}
+.utbildning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+}
+.utbildning img {
+    width: 100%;
+    margin: 0;
+}
+.utbildning p {
+    line-height: 1.5;
+    margin: 2%;
+}
+.programmeringspråken {
+    padding: 0;
+    margin-left: 6%;
+    align-self: flex-start;
+    line-height: 1.5;
+}
+.information {
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 1.5;
+}
+#sammankomster {
+    background-color: rgb(206, 213, 247);
+    padding: 2%;
+    margin: 2%;
+}
+#behörighet {
+    background-color: aliceblue;
+    padding: 2%;
+    margin: 2%;
+}
+#genomfördstudie {
+    background-color: rgb(206, 213, 247);
+    padding: 2%;
+    margin: 2%;
+}
+#efterutbildning {
+    background-color: aliceblue;
+    padding: 2%;
+    margin: 2%;
+}
+.marie {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.marie img {
+    width: 50%;
+    margin: 2%;
+}
+footer {
+    background-color: rgb(145, 145, 145);
+    padding: 1%;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 13%;
+    align-items: center;
+    gap: 10%;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    header h1 {
+        right: 10%;
+    }
+    a   {
+    color: white;
+    text-decoration: none;
+    padding: 5%;
+    }
+    .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1%;
+    }
+    .textinnehall {
+        width: 50%;
+        padding: 2%;
+    }
+    .hero img {
+        width: 50%;
+    }
+    .hero p {
+        text-align: left;
+        max-width: 100%;
+        margin: 0;
+    }
+    .utbildning img {
+        width: 50%;
+        margin-top: 10%;
+    }
+    .utbildning {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1%;
+    }
+    .utbildning p {
+        line-height: 1.6;
+        margin: 0;
+    }
+    .textinnehall2 {
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    .information {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .marie p {
+        margin-top: 10%;
+    }
+}
