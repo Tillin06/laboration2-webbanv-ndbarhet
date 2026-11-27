@@ -84,13 +84,14 @@ nav a:hover {
     align-self: flex-start;
     line-height: 1.5;
 }
-.merinformation {
-    margin: 2%;
-}
+
 .information {
     display: grid;
     grid-template-columns: 1fr;
     line-height: 1.5;
+}
+.information h2 {
+    grid-column: 1 / -1;
 }
 #sammankomster {
     background-color: rgb(206, 213, 247);
