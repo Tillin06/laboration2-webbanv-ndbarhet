@@ -6,6 +6,14 @@ body {
     font-style: normal;
     margin: 0;
 }
+p {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    max-width: 65ch;
+    line-height: 1.5;
+}
 header h1{
     margin: 0;
     position: relative;
@@ -52,6 +60,7 @@ nav a:hover {
     max-width: 100%;
     margin: 2%;
     line-height: 1.5;
+    max-width: 65ch;
 }
 .utbildning {
     display: flex;
@@ -67,12 +76,16 @@ nav a:hover {
 .utbildning p {
     line-height: 1.5;
     margin: 2%;
+    max-width: 65ch;
 }
 .programmeringspråken {
     padding: 0;
     margin-left: 6%;
     align-self: flex-start;
     line-height: 1.5;
+}
+.merinformation {
+    margin: 2%;
 }
 .information {
     display: grid;
@@ -102,13 +115,29 @@ nav a:hover {
 .marie {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin: 2%;
     font-size: 0.9rem;
     line-height: 1.6;
 }
 .marie img {
-    width: 50%;
-    margin: 2%;
+    width: 35%;
+    height: auto;
+}
+.marie-text {
+    flex: 1;
+}
+.marie blockquote {
+    margin: 1rem;
+    font-style: italic;
+}
+.marie blockquote p {
+    margin: 0 0 1rem 0;
+}
+.marie figcaption {
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
 }
 footer {
     background-color: rgb(145, 145, 145);
@@ -146,14 +175,16 @@ footer {
     .textinnehall {
         width: 50%;
         padding: 2%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     .hero img {
         width: 50%;
     }
     .hero p {
         text-align: left;
-        max-width: 100%;
-        margin: 0;
+        max-width: 65ch;
+        margin-bottom: 1.5rem;
     }
     .utbildning img {
         width: 50%;
@@ -167,16 +198,26 @@ footer {
     }
     .utbildning p {
         line-height: 1.6;
-        margin: 0;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        max-width: 65ch;
     }
     .textinnehall2 {
         padding: 2%;
         margin-bottom: 5%;
+        width: 50%;
+        box-sizing: border-box;
     }
     .information {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
-    .marie p {
-        margin-top: 10%;
+    p {
+        max-width: 65ch;
     }
+}
+.textinnehall p,
+.textinnehall2 p,
+.information p {
+    max-width: 50ch;
+    
 }
